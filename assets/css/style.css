@@ -1,7 +1,14 @@
 body {
-  font-family: "Ubuntu", sans-serif;
-  background-image: url("../pictures/sky-photo.png");
-  background-size: cover;
+  font-family: "Arial", sans-serif;
+  background-color: #eef2f3;
+  color: #333;
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 main {
@@ -13,7 +20,7 @@ main {
 sidebar {
   height: 90vh;
   width: 20vw;
-  background-color: dodgerblue;
+  background-color: rgb(23, 68, 113);
   float: left;
 }
 
@@ -27,7 +34,23 @@ weather {
   -ms-border-radius: 15px;
   -o-border-radius: 15px;
 }
+.weather-card {
+  background: linear-gradient(
+    135deg,
+    #6db9ef,
+    #7de2fc
+  ); /* Gradient background for cards */
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+.weather-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 .weather-forecast {
   display: flex;
   flex-flow: row wrap;
@@ -65,4 +88,257 @@ weather {
   -moz-border-radius: 0px 0px 15px 15px;
   -ms-border-radius: 0px 0px 15px 15px;
   -o-border-radius: 0px 0px 15px 15px;
+}
+
+/* Dynamic Backgrounds & Night Mode */
+body.daytime {
+  background-color: #7ec8e3; /* Lighter blue for daytime */
+}
+
+body.nighttime {
+  background-color: #2e3d55; /* Dark blue for nighttime */
+}
+
+/* Buttons & Interactions */
+.btn {
+  background-color: #4a90e2; /* Blue background for buttons */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #559ecd; /* Lighter blue on hover/focus */
+  transform: scale(1.05);
+  outline: none; /* Removes the outline to maintain the design, ensure accessibility through other means */
+}
+/* Weather Icons */
+.weather-icon {
+  width: 50px; /* Fixed width for icons */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Typography & Readability */
+.city-name,
+.current-weather,
+.weather-forecast-title {
+  font-size: 1.5em; /* Larger text for important titles */
+  margin-bottom: 0.5em;
+}
+
+.weather-description {
+  font-size: 1em;
+  color: #555; /* Slightly lighter text for descriptions */
+}
+
+/* Layout Adjustments */
+.weather-forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.forecast-card {
+  flex-basis: calc(20% - 20px); /* Adjust based on your layout */
+  text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .forecast-card {
+    flex-basis: calc(
+      50% - 20px
+    ); /* Stacks cards into 2 columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-forecast {
+    flex-direction: column;
+  }
+
+  .forecast-card {
+    flex-basis: 100%; /* Single column layout for very small screens */
+  }
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #eef2f3;
+  color: #333;
+  padding: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+
+sidebar {
+  height: 90vh;
+  width: 20vw;
+  background-color: dodgerblue;
+  float: left;
+}
+
+weather {
+  height: 90vh;
+  width: 75vw;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+.weather-card {
+  background: linear-gradient(135deg, #6db9ef, #7de2fc);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.weather-forecast {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  margin-top: 5%;
+}
+
+.weather-forecast > div {
+  height: 25vh;
+}
+
+#city-name {
+  font-size: 8vh;
+  text-align: center;
+  margin: 2% 2% 0 2%;
+  padding: 1%;
+  background-color: dodgerblue;
+  color: white;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+#five-day-forecast {
+  text-align: center;
+  background-color: #1977d4;
+  margin: 0 10% 0 10%;
+  padding: 1%;
+  color: white;
+  border-radius: 0px 0px 15px 15px;
+  -webkit-border-radius: 0px 0px 15px 15px;
+  -moz-border-radius: 0px 0px 15px 15px;
+  -ms-border-radius: 0px 0px 15px 15px;
+  -o-border-radius: 0px 0px 15px 15px;
+}
+
+.btn {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #559ecd;
+  transform: scale(1.05);
+  outline: none;
+}
+
+.weather-icon {
+  width: 50px;
+  height: auto;
+}
+
+.city-name,
+.current-weather,
+.weather-forecast-title {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.weather-description {
+  font-size: 1em;
+  color: #555;
+}
+
+.weather-forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.forecast-card {
+  flex-basis: calc(20% - 20px);
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+
+  sidebar,
+  weather {
+    width: 100%;
+    height: auto;
+  }
+
+  .weather-forecast > div {
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .forecast-card {
+    flex-basis: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-forecast {
+    flex-direction: column;
+  }
+
+  .forecast-card {
+    flex-basis: 100%;
+  }
+
+  #city-name,
+  #five-day-forecast {
+    margin: 5% 0;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
