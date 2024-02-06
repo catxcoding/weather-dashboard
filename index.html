@@ -25,7 +25,7 @@
     <title>Weather Forecast</title>
   </head>
   <body>
-    <nav class="navbar bg-primary">
+    <nav class="navbar custom-bg">
       <div class="container-fluid">
         <span class="navbar-brand mb-3 ms-3 fs-2 fw-bold text-white"
           >Weather Forecast App</span
@@ -33,7 +33,7 @@
       </div>
     </nav>
     <main>
-      <sidebar>
+      <div class="sidebar">
         <form>
           <div class="ms-3 me-5 mt-4 mb-3">
             <label for="locationInput" class="form-label fs-5 text-white"
@@ -56,7 +56,8 @@
         </form>
         <h1 class="mt-5 mb-3 fs-4 text-center text-white">Recent Searches:</h1>
         <div class="list-group mx-3 gap-2"></div>
-      </sidebar>
+      </div>
+
       <weather>
         <div class="city-result">
           <h1 id="city-name">City Name</h1>
