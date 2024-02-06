@@ -30,7 +30,8 @@ Welcome to the Weather Dashboard! Our application provides you with a fully func
 
 Imagine you're a traveler with the power to effortlessly check the weather outlook for multiple cities. Our Weather Dashboard makes it possible for you to plan your trips with confidence, knowing exactly what the weather has in store for your destinations.
 
-## Mock-Up
+##alt text Mock-Up
+![SCREENSHOT](assets/pictures/screenshot.png)
 
 ### Links
 
