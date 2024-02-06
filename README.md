@@ -1,43 +1,42 @@
-# weather-dashboard
-06 Server-Side APIs: Weather Dashboard
+# Weather Dashboard - README
 
-## Description
-```
-se the [5 Day Weather Forecast](https://openweathermap.org/forecast5) to retrieve weather data for cities. You will use `localStorage` to store any persistent data. For more information on how to work with the OpenWeather API. 
+## Project Overview
 
-```
+Welcome to the Weather Dashboard! Our application provides you with a fully functional weather dashboard that runs in your browser, offering dynamically updated HTML and CSS to help you access real-time weather information for multiple cities. We've successfully leveraged third-party APIs, specifically the [5 Day Weather Forecast API](https://openweathermap.org/forecast5), to retrieve weather data for cities worldwide.
 
-## User Story via Client
+## Key Features
 
-```
-AS A traveler
-I WANT to see the weather outlook for multiple cities
-SO THAT I can plan a trip accordingly
-```
+- **Real-Time Weather Data**: With our Weather Dashboard, you can instantly access current and future weather conditions for your selected cities, making trip planning a breeze.
 
-## Acceptance Criteria via Client
+- **Persistent Search History**: We've implemented a smart search history feature that stores your previous city searches using `localStorage`, so you never lose track of your destinations.
 
-```
-GIVEN a weather dashboard with form inputs
-WHEN I search for a city
-THEN I am presented with current and future conditions for that city and that city is added to the search history
-WHEN I view current weather conditions for that city
-THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, and the wind speed
-WHEN I view future weather conditions for that city
-THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
-WHEN I click on a city in the search history
-THEN I am again presented with current and future conditions for that city
-```
+- **User-Friendly Interface**: The intuitive and visually appealing user interface ensures a seamless experience while checking the weather for your favorite cities.
+
+## How to Use
+
+1. Start by entering the name of the city you want to check the weather for in the provided form.
+
+2. Once you initiate the search, you'll be presented with up-to-the-minute weather conditions for your chosen city.
+
+3. Your city search will be automatically saved in the search history for quick access in the future.
+
+4. When you view the current weather conditions for a city, you'll find detailed information such as the city name, date, weather conditions icon, temperature, humidity, and wind speed.
+
+5. Explore the future weather conditions for the city in an easy-to-read 5-day forecast format, including the date, weather conditions icon, temperature, wind speed, and humidity.
+
+6. To revisit the weather conditions for any previously searched city, simply click on that city in the search history.
+
+## User Story
+
+Imagine you're a traveler with the power to effortlessly check the weather outlook for multiple cities. Our Weather Dashboard makes it possible for you to plan your trips with confidence, knowing exactly what the weather has in store for your destinations.
+
+## Mock-Up
 
 ### Links
-
 
 [Deployed Site](https://catxcoding.github.io/weather-dashboard)
 
 [Repository](https://github.com/catxcoding/weather-dashboard)
-
-
-
 
 ### Resources Used
 
@@ -46,7 +45,6 @@ THEN I am again presented with current and future conditions for that city
 * Office Hours before/after class
 * Starter Code via Mitchell Hudson Youtube
 * Reference Code from https://openweathermap.org/forecast5
-* Tutoring
 * W3Schools
 * MDN
 ```
